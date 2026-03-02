@@ -1,24 +1,6 @@
-'''
-TODO
-sqrt
-
-absolute
-negate
-
-modulo
-
-percentage
-
-factorial
-
-reciprocal
-square
-cube
-'''
-
 def add(a: float, b: float) -> float:
     """
-    Adding a to b
+    Adding A to B
     """
     return a+b
 
@@ -26,7 +8,7 @@ def add(a: float, b: float) -> float:
 
 def substract(a: float, b: float) -> float:
     """
-    Substract a from b
+    Substract A from B
     """
     return a-b
 
@@ -34,7 +16,7 @@ def substract(a: float, b: float) -> float:
 
 def multiply(a: float, b: float) -> float:
     """
-    Multiplies a times b
+    Multiplies A times B
     """
     return a*b
 
@@ -42,7 +24,7 @@ def multiply(a: float, b: float) -> float:
 
 def divide(a: float, b: float) -> float:
     """
-    Divides a by b
+    Divides A by B
     """
     return a/b
 
@@ -50,7 +32,7 @@ def divide(a: float, b: float) -> float:
 
 def power(a: float, b: float) -> float:
     """
-    Raises a to the power of B
+    Raises A to the power of B
     """
     return pow(a,b)
 
@@ -58,13 +40,76 @@ def power(a: float, b: float) -> float:
 
 def sqrt(a: float) -> float:
     """
-    returns the square root of a
+    returns the square root of A,
+    value need to be higher than 0
     """
     if a < 0:
         return "Invalid input"
     return sqrt(a)
 
-#print("Dodawanie 2+2=", add(2, 2))
-#print("Odejmowanie 2-2=", substract(2, 2))
-#print("Mnozenie 2*2=", multiply(2, 2))
-#print("Dzielenie 2/2=", divide(2, 2))
+
+
+def absolute(a: float) ->  float:
+    """
+    returns absoulute value of A
+    """
+    return abs(a)
+
+
+
+def negate(a: float) -> float:
+    """
+    changes a sign of a number to the opposite
+    """
+    return -a
+
+
+
+def modulo(a: float, b: float) -> float:
+    """
+    returns the last of the division A/B
+    """
+    return a % b
+
+
+
+def percentage(a: float, b: float) -> float:
+    """
+    returns what % of number B is number A
+    """
+    return (a/b) * 100
+
+
+
+def factorial(a: float) -> float:
+    """
+    returns a factorial of number A
+    """
+    if a == 0: 
+        return 1
+    else:
+        return a * factorial(a - 1)
+
+
+
+def reciprocal(a: float) -> float:
+    """
+    returns a reciprocal value of number A
+    """
+    return 1/a
+
+
+
+def square(a: float) -> float:
+    """
+    returns a square value of number A
+    """
+    return a*a
+
+
+
+def cube(a: float) -> float:
+    """
+    returns a cube of value A
+    """
+    return a*a*a

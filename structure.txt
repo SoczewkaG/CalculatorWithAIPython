@@ -1,0 +1,32 @@
+smart-calculator/
+│
+├── app/                     # warstwa aplikacji (łączenie wszystkiego)
+│   ├── __init__.py
+│   └── controller.py        # logika łącząca UI, core i AI
+│
+├── core/                    # czysta logika matematyczna
+│   ├── __init__.py
+│   ├── operations.py        # + - * / potęgi itp.
+│   ├── scientific.py        # sin, cos, log, sqrt
+│   └── evaluator.py         # funkcja wykonująca wyrażenie
+│cor
+├── ai/                      # obsługa AI
+│   ├── __init__.py
+│   ├── ai_client.py         # komunikacja z API (jeśli używasz)
+│   └── ai_processor.py      # czyszczenie i przygotowanie wyrażenia
+│
+├── ui/                      # GUI
+│   ├── __init__.py
+│   └── gui.py
+│
+├── tests/                   # testy jednostkowe
+│   ├── test_operations.py
+│   ├── test_scientific.py
+│   ├── test_evaluator.py
+│   └── test_ai_processor.py
+│
+├── config.py                # konfiguracja (np. API key)
+├── main.py                  # punkt startowy aplikacji
+├── requirements.txt
+├── README.md
+└── .gitignore

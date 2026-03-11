@@ -9,7 +9,7 @@ smart-calculator/
 │   ├── operations.py        # + - * / potęgi itp.
 │   ├── scientific.py        # sin, cos, log, sqrt
 │   └── evaluator.py         # funkcja wykonująca wyrażenie
-│cor
+│
 ├── ai/                      # obsługa AI
 │   ├── __init__.py
 │   ├── ai_client.py         # komunikacja z API (jeśli używasz)
